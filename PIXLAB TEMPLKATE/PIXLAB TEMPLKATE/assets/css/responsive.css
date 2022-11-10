@@ -1,0 +1,267 @@
+/*-----------------------------------*\
+  # STYLE - RESPONSIVE CSS
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @CodeMaxi
+ */
+
+/*-----------------------------------*\
+  # RESPONSIVE DESKTOP
+\*-----------------------------------*/
+@media screen and (min-width: 1200px) {
+  /*-----------------------------------*\
+  # CUSTOM PROPERTIES
+\*-----------------------------------*/
+  :root {
+    /**
+   * typography
+   */
+    --fs-h1: 3.3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.8rem;
+    --fs-span-section: 1.5rem;
+    --fs-p: 1.08rem;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+
+    /**
+   * spacing
+   */
+    --section-padding: 100px;
+  }
+
+  /*-----------------------------------*\
+    # REUSED STYLE
+    \*-----------------------------------*/
+  button {
+    cursor: pointer;
+  }
+
+  .title-section span {
+    font-size: var(--fs-span-section);
+    margin-bottom: 0.8rem;
+  }
+
+  .title-section h2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+    font-size: 2.4rem;
+  }
+
+  .title-section span {
+    font-size: var(--fs-span-section);
+    margin-bottom: 0.8rem;
+    position: relative;
+    width: 8%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+
+  /*-----------------------------------*\
+    # NAV
+    \*-----------------------------------*/
+  .nav {
+    width: 100%;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .menu {
+    position: static;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    transform: translateX(0%);
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu a {
+    margin-left: 4rem;
+    font-weight: 520;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+  .btn-menu--contact {
+    display: block;
+    background-color: var(--main-color-primary);
+    padding: 12px;
+    border-radius: var(--border-radius);
+  }
+
+  .btn-menu--contact img {
+    width: 20px;
+  }
+
+  .btn-close {
+    display: none;
+    opacity: 0;
+  }
+
+  /*-----------------------------------*\
+    # HEADER
+    \*-----------------------------------*/
+  header {
+    width: 100%;
+    height: 115vh;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 10rem;
+  }
+
+  .hero .hero-title {
+    padding: 10px;
+    padding-top: 80px;
+    width: 50%;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .hero-picture {
+    display: block;
+    padding-top: 100px;
+    width: 50%;
+    position: relative;
+  }
+
+  .hero-picture .picture {
+    width: 80%;
+    height: 90%;
+    border-radius: 200px 200px 200px 200px;
+    overflow: hidden;
+  }
+
+  .hero-picture .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cirlce-logo--1 {
+    position: absolute;
+    bottom: 0;
+    left: -5rem;
+  }
+
+  /*-----------------------------------*\
+    # ABOUT
+    \*-----------------------------------*/
+  .section-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .about-picture {
+    width: 45%;
+  }
+
+  .about-info {
+    width: 45%;
+  }
+
+  /*-----------------------------------*\
+    # SERVICE
+    \*-----------------------------------*/
+  .container-items {
+    width: 85%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .container-items .item {
+    height: 370px;
+    padding: 40px;
+    border: 1px solid var(--color-p);
+  }
+
+  .item h4 {
+    font-size: var(--fs-h4);
+    font-weight: 600;
+  }
+
+  .item:hover {
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-2);
+  }
+
+  /*-----------------------------------*\
+  # PROJECT
+\*-----------------------------------*/
+  .title-section--optional {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .title-section--optional span {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-gallery ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-gallery ul li {
+    padding: 8px 20px;
+    margin: 5px;
+  }
+
+  .project-picture {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-picture .item-Box {
+    width: 25%;
+    height: 100%;
+  }
+
+  .item-Box .project-hover i {
+    font-size: 36px;
+  }
+}
+
+/*-----------------------------------*\
+  # RESPONSIVE DESKTOP
+\*-----------------------------------*/
